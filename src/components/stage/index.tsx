@@ -4,7 +4,7 @@ import type {JSX} from 'react';
 export default function Stage(): JSX.Element {
     return (
         <div id="stage">
-            <p>I LOVE <b>GITHUB</b> !</p>
+            <b>I❤️GITHUB</b>
         </div>
     )
 }
