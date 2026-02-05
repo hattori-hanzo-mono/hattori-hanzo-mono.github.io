@@ -10,11 +10,15 @@
   justify-content : $justify ;
   align-items : $align ;
 }
+@mixin fill( $background, $color ) {
+  background-color: $background ;
+  color: $color ;
+  $mixColor: color-mix( in srgb, $background 50%, black );
+  box-shadow: 0 2px 1px $mixColor;
+}
 @mixin fillSelectedPrimary() {
-  background-color: $css-primary-background-color ;
-  color: $css-primary-text-color ;
+  @include fill( $css-primary-background-color, $css-primary-text-color ) ;
 }
 @mixin fillSelectedSecondary() {
-  background-color: $css-secondary-background-color ;
-  color: $css-secondary-text-color ;
+  @include fill( $css-secondary-background-color, $css-secondary-text-color ) ;
 }

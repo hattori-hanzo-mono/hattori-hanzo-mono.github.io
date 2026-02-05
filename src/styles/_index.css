@@ -20,7 +20,7 @@
 
     /* FONTS */
     --css-font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    --css-text-font-size-100: 16px ;
+    --css-text-font-size-100: 18px ;
     --css-text-font-size-75: calc(var(--css-text-font-size-100) * .75 );
     --css-text-font-size-50: calc(var(--css-text-font-size-100) * .50 );
     --css-text-font-size-25: calc(var(--css-text-font-size-100) * .25 );
