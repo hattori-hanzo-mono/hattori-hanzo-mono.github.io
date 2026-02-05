@@ -1,6 +1,11 @@
+import type {JSX} from 'react';
+import Stage from '../../components/stage'
 import './style.scss'
-import type {JSX, PropsWithChildren} from 'react';
 
-export default function Application( props: PropsWithChildren ): JSX.Element {
-    return ( <div id="application">{ props.children }</div> )
+export default function Application(): JSX.Element {
+    return (
+        <div id="application">
+            <Stage/>
+        </div>
+    )
 }

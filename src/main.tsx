@@ -1,8 +1,7 @@
 import {StrictMode} from 'react'
 import {createRoot} from 'react-dom/client'
 import Application from './pages/application'
-import Stage from './components/stage'
-import "./i18n";
+import "./core/i18n";
 import './styles/global.scss'
 
 function bootstrap(): void {
@@ -10,9 +9,7 @@ function bootstrap(): void {
     if( root ) {
         createRoot( root ! ).render(
             <StrictMode>
-                <Application>
-                    <Stage/>
-                </Application>
+                <Application/>
             </StrictMode>
         )
     } else {
