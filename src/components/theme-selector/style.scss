@@ -1,0 +1,20 @@
+@use '../../styles/variables' as * ;
+@use '../../styles/mixins' as * ;
+
+.theme-selector {
+  @include setScreen() ;
+
+  padding: 0 $css-padding-25 ;
+
+  border-radius: var(--css-border-radius);
+
+  color: $css-background-color ;
+  background-color: $css-text-color ;
+
+  font-family: $css-font-family ;
+  font-size: $css-text-font-size-100 ;
+
+  &:hover {
+    cursor: pointer ;
+  }
+}

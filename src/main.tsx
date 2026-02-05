@@ -2,7 +2,8 @@ import {StrictMode} from 'react'
 import {createRoot} from 'react-dom/client'
 import Application from './pages/application'
 import "./core/i18n";
-import './styles/global.scss'
+import './styles/_index.css'
+import './styles/index.scss'
 
 function bootstrap(): void {
     const root: HTMLElement | null = document.getElementById('root')

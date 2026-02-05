@@ -1,5 +1,7 @@
-#application {
-  display: flex;
-  align-items: center ;
-  justify-content: center ;
+@use '../../styles/variables' as * ;
+@use '../../styles/mixins' as * ;
+
+.application {
+  @include setScreen() ;
+  row-gap: $css-padding-25;
 }

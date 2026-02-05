@@ -1,0 +1,9 @@
+@use '../../styles/variables' as * ;
+@use '../../styles/mixins' as * ;
+
+.stage {
+  @include setScreen() ;
+  row-gap: $css-padding-100 ;
+  column-gap: $css-padding-100 ;
+  b { color: $css-text-color }
+}

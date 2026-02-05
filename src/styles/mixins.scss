@@ -1,0 +1,10 @@
+@mixin inspect( $color: crimson ) {
+  border: 1px solid $color ! important ;
+  background-color: rgba( $color, .5 ) ! important ;
+}
+@mixin setScreen( $display: flex, $direction: column, $justify: center, $align: center ) {
+  display: $display ;
+  flex-direction: $direction ;
+  justify-content : $justify ;
+  align-items : $align ;
+}

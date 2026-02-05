@@ -1,0 +1,46 @@
+:root {
+    /* PADDINGS */
+    --css-padding-100: 1em ;
+    --css-padding-75: calc(var(--css-padding-100) * .75 );
+    --css-padding-50: calc(var(--css-padding-100) * .50 );
+    --css-padding-25: calc(var(--css-padding-100) * .25 );
+
+    /* COLORS */
+    --css-color-black: var(--dark) ;
+    --css-color-white: var(--light) ;
+
+    /* COLOR SCHEME */
+    --css-theme-dark: dark ;
+    --css-theme-light: light ;
+      color-scheme: var(--css-theme-light) ;
+
+    /* FONTS */
+    --css-font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    --css-text-font-size-100: 16px ;
+    --css-text-font-size-75: calc(var(--css-text-font-size-100) * .75 );
+    --css-text-font-size-50: calc(var(--css-text-font-size-100) * .50 );
+    --css-text-font-size-25: calc(var(--css-text-font-size-100) * .25 );
+    --css-text-line-height: calc( var( --css-text-font-size-100 ) + 6 ) ;
+
+    /* BORDERS */
+    --css-border-radius: 2px;
+}
+#root {
+    width: 100% ;
+    margin: 0 auto ;
+    padding: 0 ;
+    text-align: center;
+}
+
+@media (prefers-color-scheme: var( --css-theme-light )) {
+    :root {
+        --css-background-color: var(--css-color-white);
+        --css-text-color: var(--css-color-black);
+    }
+}
+@media (prefers-color-scheme: var( --css-theme-dark )) {
+    :root {
+        --css-background-color: var(--css-color-black);
+        --css-text-color: var(--css-color-white);
+    }
+}

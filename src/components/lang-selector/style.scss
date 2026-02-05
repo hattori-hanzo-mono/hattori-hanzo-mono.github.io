@@ -1,0 +1,7 @@
+@use '../../styles/variables' as * ;
+@use '../../styles/mixins' as * ;
+
+.lang-selector {
+  @include setScreen( flex, center, flex-start ) ;
+  column-gap: $css-padding-25;
+}

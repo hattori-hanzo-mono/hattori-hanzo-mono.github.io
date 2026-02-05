@@ -1,3 +1,27 @@
-$bg: #ffffff;
-$text: #000000;
-$radius: 2px;
+/* PADDINGS */
+$css-padding-100: var( --css-padding-100 );
+$css-padding-75: var( --css-padding-75 );
+$css-padding-50: var( --css-padding-50 );
+$css-padding-25: var( --css-padding-25 );
+
+/* COLORS */
+$css-background-color: var(--css-background-color);
+$css-text-color: var(--css-text-color);
+$css-color-black: var(--css-color-black);
+$css-color-white: var(--css-color-white);
+
+/* COLOR SCHEME */
+$css-theme-dark: var(--css-theme-dark);
+$css-theme-light: var(--css-theme-light);
+$color-scheme: var(color-scheme);
+
+/* FONTS */
+$css-font-family: var(--css-font-family);
+$css-text-font-size-100: var(--css-text-font-size-100);
+$css-text-font-size-75: var(--css-text-font-size-75);
+$css-text-font-size-50: var(--css-text-font-size-50);
+$css-text-font-size-25: var(--css-text-font-size-25);
+$css-text-line-height: var(--css-text-line-height);
+
+/* borders */
+$css-border-radius: var(--css-border-radius);
