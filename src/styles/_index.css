@@ -6,13 +6,17 @@
     --css-padding-25: calc(var(--css-padding-100) * .25 );
 
     /* COLORS */
-    --css-color-black: var(--dark) ;
-    --css-color-white: var(--light) ;
+    --css-color-black: black ;
+    --css-color-white: white ;
+    --css-color-red: crimson ;
+    --css-color-green: limegreen ;
+    --css-color-yellow: orange ;
+    --css-color-blue: dodgerblue ;
 
     /* COLOR SCHEME */
-    --css-theme-dark: dark ;
-    --css-theme-light: light ;
-      color-scheme: var(--css-theme-light) ;
+      color-scheme: light dark ;
+    --css-background-color: var(--css-color-white);
+    --css-text-color: var(--css-color-black);
 
     /* FONTS */
     --css-font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -32,15 +36,30 @@
     text-align: center;
 }
 
-@media (prefers-color-scheme: var( --css-theme-light )) {
-    :root {
+:root {
+    &[data-theme="light"] {
+        color-scheme: light;
+
         --css-background-color: var(--css-color-white);
         --css-text-color: var(--css-color-black);
+
+        --css-primary-background-color: var(--css-color-blue)  ;
+        --css-primary-text-color: var(--css-color-white) ;
+
+        --css-secondary-background-color: var(--css-color-yellow) ;
+        --css-secondary-text-color: var(--css-color-black) ;
+
     }
-}
-@media (prefers-color-scheme: var( --css-theme-dark )) {
-    :root {
+    &[data-theme="dark"] {
+        color-scheme: dark;
+
         --css-background-color: var(--css-color-black);
         --css-text-color: var(--css-color-white);
+
+        --css-primary-background-color: var(--css-color-red) ;
+        --css-primary-text-color: var(--css-color-white) ;
+
+        --css-secondary-background-color: var(--css-color-green) ;
+        --css-secondary-text-color: var(--css-color-white) ;
     }
 }

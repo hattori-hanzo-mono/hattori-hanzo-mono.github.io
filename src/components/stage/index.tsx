@@ -6,7 +6,7 @@ export default function Stage(): JSX.Element {
     const {t} = useTranslation();
     return (
         <div className="stage">
-            <b>{ t("title") }</b>
+            { t("key") }<b>{ t("value") }</b>
         </div>
     )
 }

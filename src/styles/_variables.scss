@@ -5,15 +5,21 @@ $css-padding-50: var( --css-padding-50 );
 $css-padding-25: var( --css-padding-25 );
 
 /* COLORS */
-$css-background-color: var(--css-background-color);
-$css-text-color: var(--css-text-color);
 $css-color-black: var(--css-color-black);
 $css-color-white: var(--css-color-white);
+$css-color-red: var(--css-color-red);
+$css-color-blue: var(--css-color-blue);
+$css-color-green: var(--css-color-green);
+$css-color-yellow: var(--css-color-yellow);
 
 /* COLOR SCHEME */
-$css-theme-dark: var(--css-theme-dark);
-$css-theme-light: var(--css-theme-light);
-$color-scheme: var(color-scheme);
+$color-scheme: var(--color-scheme);
+$css-background-color: var(--css-background-color);
+$css-text-color: var(--css-text-color);
+$css-primary-background-color: var(--css-primary-background-color);
+$css-primary-text-color: var(--css-primary-text-color);
+$css-secondary-background-color: var(--css-secondary-background-color);
+$css-secondary-text-color: var(--css-secondary-text-color);
 
 /* FONTS */
 $css-font-family: var(--css-font-family);

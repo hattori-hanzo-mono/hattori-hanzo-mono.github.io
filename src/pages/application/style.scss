@@ -3,5 +3,23 @@
 
 .application {
   @include setScreen() ;
+  color: $css-text-color;
   row-gap: $css-padding-25;
+  &> .colors {
+    @include setScreen( flex, row ) ;
+    column-gap: $css-padding-25;
+
+    &>div {
+      padding: $css-padding-25;
+      border-radius: $css-border-radius;
+      &:nth-child(1) {
+        background-color: $css-primary-background-color;
+        color: $css-primary-text-color;
+      }
+      &:nth-child(2) {
+        background-color: $css-secondary-background-color;
+        color: $css-secondary-text-color;
+      }
+    }
+  }
 }

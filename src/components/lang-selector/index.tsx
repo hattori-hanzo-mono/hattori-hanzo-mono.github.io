@@ -5,7 +5,11 @@ import {available as LANGUAGES_AVAILABLE, type TI18N} from "../../core/constants
 import './style.scss';
 
 export default function LangSelector(): JSX.Element {
-    const { i18n } = useTranslation();
+    const ninja = useTranslation();
+    const { i18n } = ninja ;
+
+    console.log( { ninja, i18n } );
+
     const onChangeLanguage= useCallback(
         ( event: React.MouseEvent<HTMLButtonElement> ) =>
             ( i18n.changeLanguage( event.currentTarget.dataset.lang! ) ),[ i18n ]
@@ -13,7 +17,7 @@ export default function LangSelector(): JSX.Element {
     return (
         <div className="lang-selector">
             { LANGUAGES_AVAILABLE.map( ( lang: TI18N, key: number ) => (
-                <button key={ key } data-lang={ lang } onClick={ onChangeLanguage }>{ lang }</button>
+                <button key={ key } data-selected={ lang === i18n.language } data-lang={ lang } onClick={ onChangeLanguage }>{ lang }</button>
             )) }
         </div>
     )

@@ -2,19 +2,19 @@
 @use '../../styles/mixins' as * ;
 
 .theme-selector {
-  @include setScreen() ;
-
-  padding: 0 $css-padding-25 ;
-
-  border-radius: var(--css-border-radius);
-
-  color: $css-background-color ;
-  background-color: $css-text-color ;
-
+  @include setScreen( flex, row ) ;
   font-family: $css-font-family ;
   font-size: $css-text-font-size-100 ;
+  column-gap: $css-padding-25;
 
-  &:hover {
-    cursor: pointer ;
+  &> b {
+    background-color: $css-text-color ;
+    color: $css-background-color ;
+    padding: $css-padding-25;
+    border-radius: $css-border-radius ;
+    &:hover {
+      cursor: pointer;
+      &:hover { @include fillSelectedPrimary() }
+    }
   }
 }

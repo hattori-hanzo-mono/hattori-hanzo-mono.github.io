@@ -2,8 +2,7 @@
 @use '../../styles/mixins' as * ;
 
 .stage {
-  @include setScreen() ;
-  row-gap: $css-padding-100 ;
-  column-gap: $css-padding-100 ;
-  b { color: $css-text-color }
+  @include setScreen( flex, row ) ;
+  row-gap: $css-padding-50 ;
+  b { color: $css-primary-background-color }
 }

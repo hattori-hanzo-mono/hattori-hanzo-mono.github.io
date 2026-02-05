@@ -1,3 +1,5 @@
+@use './variables' as * ;
+
 @mixin inspect( $color: crimson ) {
   border: 1px solid $color ! important ;
   background-color: rgba( $color, .5 ) ! important ;
@@ -7,4 +9,12 @@
   flex-direction: $direction ;
   justify-content : $justify ;
   align-items : $align ;
+}
+@mixin fillSelectedPrimary() {
+  background-color: $css-primary-background-color ;
+  color: $css-primary-text-color ;
+}
+@mixin fillSelectedSecondary() {
+  background-color: $css-secondary-background-color ;
+  color: $css-secondary-text-color ;
 }

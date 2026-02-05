@@ -5,8 +5,8 @@ import './style.scss'
 export default function ThemeSelector(): JSX.Element {
     const { scheme, toggle } = useColorScheme();
     return (
-        <div className="theme-selector" onClick={toggle}>
-            Theme: {scheme}
+        <div className="theme-selector" onClick={ toggle }>
+            color theme: <b>{ scheme }</b>
         </div>
     )
 }

@@ -10,6 +10,10 @@ export default function Application(): JSX.Element {
             <Stage/>
             <LangSelector/>
             <ThemeSelector/>
+            <div className="colors">
+                <div>primary</div>
+                <div>secondary</div>
+            </div>
         </div>
     )
 }

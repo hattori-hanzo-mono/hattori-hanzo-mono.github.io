@@ -4,4 +4,16 @@
 .lang-selector {
   @include setScreen( flex, center, flex-start ) ;
   column-gap: $css-padding-25;
+
+  button {
+    padding: $css-padding-25 $css-padding-50 ;
+    border-radius: $css-border-radius;
+    cursor: pointer ;
+    border: none ;
+    background-color: $css-text-color ;
+    color: $css-background-color ;
+    text-transform: uppercase ;
+    &:hover { @include fillSelectedPrimary() }
+    &[data-selected="true"]:not(:hover) { @include fillSelectedSecondary() }
+  }
 }
