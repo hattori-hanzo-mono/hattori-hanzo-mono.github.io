@@ -1,9 +1,14 @@
 :root {
+    --css-text-font-size-min: 14px ;
+    --css-text-font-size-max: 18px ;
+    --css-text-font-size-value: clamp( var(--css-text-font-size-min), 1.1vw, var(--css-text-font-size-max) );
+
     /* PADDINGS */
-    --css-padding-100: 1em ;
+    --css-padding-100: var(--css-text-font-size-value) ;
     --css-padding-75: calc(var(--css-padding-100) * .75 );
     --css-padding-50: calc(var(--css-padding-100) * .50 );
     --css-padding-25: calc(var(--css-padding-100) * .25 );
+    --css-aside: 15% ;
 
     /* COLORS */
     --css-color-black: black ;
@@ -20,23 +25,16 @@
 
     /* FONTS */
     --css-font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    --css-text-font-size-100: 18px ;
+    --css-text-font-size-100: var(--css-text-font-size-value);
     --css-text-font-size-75: calc(var(--css-text-font-size-100) * .75 );
     --css-text-font-size-50: calc(var(--css-text-font-size-100) * .50 );
     --css-text-font-size-25: calc(var(--css-text-font-size-100) * .25 );
     --css-text-line-height: calc( var( --css-text-font-size-100 ) + 6 ) ;
 
     /* BORDERS */
-    --css-border-radius: 2px;
-}
-#root {
-    width: 100% ;
-    margin: 0 auto ;
-    padding: 0 ;
-    text-align: center;
-}
+    --css-border-radius: 1px;
+    --css-border-color: color-mix( in srgb, var(--css-text-color) 5%, var(--css-background-color) );
 
-:root {
     &[data-theme="light"] {
         color-scheme: light;
 
@@ -62,4 +60,11 @@
         --css-secondary-background-color: var(--css-color-green) ;
         --css-secondary-text-color: var(--css-color-white) ;
     }
+}
+#root {
+    display: flex ;
+    flex-direction: column ;
+    width: 100% ;
+    margin: 0 auto ;
+    padding: 0 ;
 }

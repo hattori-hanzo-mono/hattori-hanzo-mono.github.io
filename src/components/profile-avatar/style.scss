@@ -1,0 +1,8 @@
+@use '../../styles/variables' as * ;
+@use '../../styles/mixins' as * ;
+
+.profile-avatar {
+  &> img {
+    width: 100%;
+  }
+}
