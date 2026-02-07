@@ -1,0 +1,10 @@
+@use '../../styles/variables' as * ;
+@use '../../styles/mixins' as * ;
+
+.markdown-layout {
+  @include setScreen( flex, column, flex-start, flex-start ) ;
+  width: 100% ;
+
+  font-size: $css-text-font-size-100 ;
+  &> * { font-size: $css-text-font-size-100 }
+}

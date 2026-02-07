@@ -6,7 +6,7 @@ import remarkGfm from "remark-gfm";
 import rehypeSanitize from "rehype-sanitize";
 import {useDataLoader} from "../../hooks/data-loader";
 import {useTranslation} from "react-i18next";
-// import './style.scss';
+import './style.scss';
 
 export default function MarkdownContent( props: TMarkdownLayoutProps ): JSX.Element {
     const { id } = props ;
@@ -21,10 +21,10 @@ export default function MarkdownContent( props: TMarkdownLayoutProps ): JSX.Elem
     useEffect(() => { load() }, [ i18n.language ]);
 
     return (
-        <span className="markdown-layout">
+        <div className="markdown-layout">
             <ReactMarkdown remarkPlugins={[ remarkGfm ]} rehypePlugins={[ rehypeSanitize ]}>
                 { md }
             </ReactMarkdown>
-        </span>
+        </div>
     )
 }

@@ -25,6 +25,7 @@
   }
   &> .context {
     @include setScreen() ;
+    overflow: hidden;
     flex: 1;
   }
 }
