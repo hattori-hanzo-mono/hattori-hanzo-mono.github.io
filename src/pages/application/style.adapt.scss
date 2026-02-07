@@ -3,7 +3,7 @@
 
 @media( orientation: landscape ) {
   .application {
-    padding: 5% $css-aside 5% $css-aside;
+    padding-top: 5% ;
     row-gap: $css-padding-25;
     &> * { margin-bottom: $css-aside }
   }
