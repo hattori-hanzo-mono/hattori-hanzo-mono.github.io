@@ -29,7 +29,8 @@
       color: $css-secondary-background-color ;
     }
     &:not(:last-child):after {
-      content: "|";
+      display: contents ;
+      content: " | ";
       padding: 0 1px ;
       color: $css-border-color;
     }

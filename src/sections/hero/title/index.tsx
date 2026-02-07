@@ -4,8 +4,7 @@ import './style.scss'
 export default function Title(): JSX.Element {
     return (
         <div className="title">
-            <h3>Мыльченко Александр</h3>
-            <p>const<span>антинович</span></p>
+            <h3>Name</h3>
         </div>
     )
 }

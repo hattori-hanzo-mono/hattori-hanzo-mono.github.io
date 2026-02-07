@@ -1,5 +1,5 @@
 :root {
-    --css-text-font-size-min: 14px ;
+    --css-text-font-size-min: 12px ;
     --css-text-font-size-max: 18px ;
     --css-text-font-size-value: clamp( var(--css-text-font-size-min), 1.1vw, var(--css-text-font-size-max) );
 
@@ -33,10 +33,11 @@
 
     /* BORDERS */
     --css-border-radius: 3px;
-    --css-border-color: color-mix( in srgb, var(--css-background-color) 35%, var(--css-text-color) );
+    --css-border-color: color-mix( in srgb, var( --css-background-color ) 35%, var( --css-text-color ) );
+    --css-border-color-alpha: color-mix( in srgb, var( --css-border-color ) 15%, transparent );
 
     &[data-theme="light"] {
-        color-scheme: light;
+          color-scheme: light;
 
         --css-background-color: var(--css-color-white);
         --css-text-color: var(--css-color-black);
@@ -47,7 +48,7 @@
         --css-secondary-text-color: var(--css-color-white) ;
     }
     &[data-theme="dark"] {
-        color-scheme: dark;
+          color-scheme: dark;
 
         --css-background-color: var(--css-color-black);
         --css-text-color: var(--css-color-white);

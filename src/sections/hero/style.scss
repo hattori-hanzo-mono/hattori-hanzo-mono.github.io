@@ -15,11 +15,19 @@
     }
   }
 
+  $left-padding: calc( $css-padding-100 * 20 ) ;
+
   &> .left {
-    width: 50% ;
+    @include setScreen( flex, column, flex-start, flex-start ) ;
+    width: $left-padding ;
+    height: 100%;
+    border-right: 1px solid $css-border-color-alpha ;
     background-color: $css-color-black ;
     color: $css-color-white ;
   }
-  &> .context { width: 100% }
+  &> .context {
+    @include setScreen() ;
+    width: calc( 100% - $left-padding ) ;
+  }
 }
 

@@ -1,1 +1,3 @@
-export type TDataLoaderHook = {}
+export type TDataLoaderHook = {
+    getResource: Function
+}
