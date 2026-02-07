@@ -5,10 +5,10 @@
   @include setScreen( flex, column, flex-start ) ;
   background-color: $css-background-color ;
   width: 100% ;
-
   min-height: 100vh ;
   height: auto ;
-
   $mixColor: color-mix( in srgb, $css-text-color 50%, $css-background-color );
   box-shadow: 0 20px 60px $mixColor ;
+  overflow: hidden ;
+  border-radius: $css-border-radius ;
 }

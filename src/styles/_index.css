@@ -32,8 +32,8 @@
     --css-text-line-height: calc( var( --css-text-font-size-100 ) + 6 ) ;
 
     /* BORDERS */
-    --css-border-radius: 1px;
-    --css-border-color: color-mix( in srgb, var(--css-text-color) 5%, var(--css-background-color) );
+    --css-border-radius: 3px;
+    --css-border-color: color-mix( in srgb, var(--css-background-color) 35%, var(--css-text-color) );
 
     &[data-theme="light"] {
         color-scheme: light;
@@ -41,12 +41,10 @@
         --css-background-color: var(--css-color-white);
         --css-text-color: var(--css-color-black);
 
-        --css-primary-background-color: var(--css-color-blue)  ;
-        --css-primary-text-color: var(--css-color-white) ;
-
-        --css-secondary-background-color: var(--css-color-yellow) ;
-        --css-secondary-text-color: var(--css-color-black) ;
-
+        --css-primary-background-color: var(--css-color-yellow) ;
+        --css-primary-text-color: var(--css-color-black) ;
+        --css-secondary-background-color: var(--css-color-blue)  ;
+        --css-secondary-text-color: var(--css-color-white) ;
     }
     &[data-theme="dark"] {
         color-scheme: dark;
@@ -54,10 +52,9 @@
         --css-background-color: var(--css-color-black);
         --css-text-color: var(--css-color-white);
 
-        --css-primary-background-color: var(--css-color-red) ;
+        --css-primary-background-color: var(--css-color-green) ;
         --css-primary-text-color: var(--css-color-white) ;
-
-        --css-secondary-background-color: var(--css-color-green) ;
+        --css-secondary-background-color: var(--css-color-red) ;
         --css-secondary-text-color: var(--css-color-white) ;
     }
 }

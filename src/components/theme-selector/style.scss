@@ -4,17 +4,25 @@
 .theme-selector {
   @include setScreen( flex, row ) ;
   font-family: $css-font-family ;
-  font-size: $css-text-font-size-100 ;
   column-gap: $css-padding-25;
+  white-space: nowrap ;
 
-  &> b {
-    background-color: $css-text-color ;
-    color: $css-background-color ;
-    padding: $css-padding-25;
-    border-radius: $css-border-radius ;
-    &:hover {
-      cursor: pointer;
-      &:hover { @include fillSelectedPrimary() }
+  .label, .value {
+    font-size: $css-text-font-size-75 ;
+    text-transform: uppercase ;
+  }
+
+  &> .label {
+    color: $css-border-color;
+    &:after {
+      content: ": ";
+      color: $css-border-color;
     }
+  }
+  & .value {
+    cursor: pointer;
+    border-radius: $css-border-radius ;
+    color: $css-primary-background-color ;
+    &:hover { color: $css-secondary-background-color }
   }
 }

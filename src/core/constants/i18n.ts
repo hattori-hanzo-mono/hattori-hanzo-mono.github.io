@@ -5,4 +5,9 @@ export const I18N = {
   EN: 'en'
 } as const ;
 
+export const I18N_LANGUAGES: Record<TI18N, string> = {
+  [I18N.UA]: 'українська',
+  [I18N.EN]: 'english'
+} as const;
+
 export const available: TI18N[] = [ I18N.UA, I18N.EN ] ;

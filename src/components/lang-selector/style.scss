@@ -2,18 +2,36 @@
 @use '../../styles/mixins' as * ;
 
 .lang-selector {
-  @include setScreen( flex, row, flex-start ) ;
+  @include setScreen( flex, row, flex-start, center ) ;
   column-gap: $css-padding-25 ;
 
-  button {
-    padding: $css-padding-25 $css-padding-50 ;
-    border-radius: $css-border-radius;
-    cursor: pointer ;
-    border: none ;
-    background-color: $css-text-color ;
-    color: $css-background-color ;
+  .label, .value {
+    font-size: $css-text-font-size-75 ;
     text-transform: uppercase ;
-    &:hover { @include fillSelectedPrimary() }
-    &[data-selected="true"]:not(:hover) { @include fillSelectedSecondary() }
+  }
+
+  &> .label {
+    color: $css-border-color;
+    &:after {
+      content: ": ";
+      color: $css-border-color;
+    }
+  }
+  &> .value {
+    display: inline-flex;
+    cursor: pointer ;
+    color: $css-color-white ;
+
+    &[data-selected="true"]:not(:hover) {
+      color: $css-primary-background-color ;
+    }
+    &:hover {
+      color: $css-secondary-background-color ;
+    }
+    &:not(:last-child):after {
+      content: "|";
+      padding: 0 1px ;
+      color: $css-border-color;
+    }
   }
 }

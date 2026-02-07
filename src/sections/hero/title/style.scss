@@ -1,0 +1,21 @@
+@use '../../../styles/variables' as * ;
+@use '../../../styles/mixins' as * ;
+
+.title {
+  width: 100% ;
+  text-transform: uppercase ;
+
+  $title-font-size: $css-text-font-size-100 ;
+
+  h3 {
+    font-size: $title-font-size ;
+    margin: unset
+  }
+  p, b {
+    font-size: $css-text-font-size-75 ;
+    line-height: calc( $css-text-font-size-100 + $css-padding-50 ) ;
+    margin: unset;
+  }
+  p { color: $css-primary-background-color }
+  span { color: $css-border-color }
+}

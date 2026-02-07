@@ -16,15 +16,9 @@ body {
   font-family: $css-font-family ;
   font-size: $css-text-font-size-100;
   line-height: $css-text-line-height;
-  transition: background-color 500ms ease,
-              color 500ms ease ;
+  transition: background-color 500ms ease, color 500ms ease ;
 }
 
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase ;
-}
-h1, h2, h3, h4, h5, h6, p {
-  font-size: $css-text-font-size-100 ;
-  line-height: $css-text-line-height ;
-  margin: $css-padding-50 0 ;
 }

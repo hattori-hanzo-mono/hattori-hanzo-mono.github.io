@@ -1,8 +1,0 @@
-@use '../../styles/variables' as * ;
-@use '../../styles/mixins' as * ;
-
-.stage {
-  @include setScreen( flex, row ) ;
-  row-gap: $css-padding-50 ;
-  b { color: $css-primary-background-color }
-}

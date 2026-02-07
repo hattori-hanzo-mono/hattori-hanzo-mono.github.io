@@ -1,0 +1,16 @@
+@use '../../styles/variables' as * ;
+@use '../../styles/mixins' as * ;
+
+@media( orientation: landscape ) {
+  .hero {
+    &> .left .wrapper { padding: calc( $css-padding-100 * 2 ) }
+    &> .context .wrapper { padding: $css-padding-100 calc( $css-padding-100 * 2 ) }
+  }
+}
+
+@media( orientation: portrait ) {
+  .hero {
+    &> .left .wrapper { padding: $css-padding-100 }
+    &> .context .wrapper { padding: 0 $css-padding-100 }
+  }
+}

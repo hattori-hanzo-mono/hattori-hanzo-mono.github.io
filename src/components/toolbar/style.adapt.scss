@@ -1,0 +1,17 @@
+@use '../../styles/variables' as * ;
+@use '../../styles/mixins' as * ;
+
+
+@media( orientation: landscape ) {
+  .toolbar {
+    $padding-aside: calc( $css-padding-100 * 2 ) ;
+    &> .left { padding-left: $padding-aside }
+    &> .right { padding-right: $padding-aside }
+  }
+}
+@media( orientation: portrait ) {
+  .toolbar {
+    &> .left { padding-left: $css-padding-100 }
+    &> .right { padding-right: $css-padding-100 }
+  }
+}

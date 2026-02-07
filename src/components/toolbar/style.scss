@@ -1,0 +1,18 @@
+@use '../../styles/variables' as * ;
+@use '../../styles/mixins' as * ;
+@import './style.adapt.scss' ;
+
+.toolbar {
+  $min-width: 50% ;
+  @include setScreen( flex, row, space-between ) ;
+  width: 100% ;
+  background-color: $css-color-black ;
+  color: $css-color-white ;
+
+  &> .left, &> .right {
+    column-gap: $css-padding-100 ;
+    min-width: $min-width ;
+  }
+  &> .left { @include setScreen( flex, row, flex-start, center ) }
+  &> .right { @include setScreen( flex, row, flex-end, center ) }
+}
