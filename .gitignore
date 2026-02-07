@@ -1,12 +1,11 @@
-logs
-*.log
+.env
+.design
+.idea
+.DS_Store
 
 node_modules
 dist
+logs
+
+*.log
 *.local
-
-.idea
-.DS_Store
-/.env
-
-/.design

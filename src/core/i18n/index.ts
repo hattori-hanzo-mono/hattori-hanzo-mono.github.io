@@ -3,7 +3,7 @@ import {initReactI18next} from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import lEN from "../../locales/en/dictionary.json";
 import lUA from "../../locales/ua/dictionary.json";
-import {available as LANGUAGES_AVAILABLE, I18N} from "../constants";
+import {available as LANGUAGES_AVAILABLE, I18N} from "../i18n/types.ts";
 
 i18n
   .use( LanguageDetector )
@@ -24,4 +24,4 @@ i18n
     },
   });
 
-export default i18n;
+export default i18n ;

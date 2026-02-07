@@ -1,6 +1,6 @@
 @use '../../styles/variables' as * ;
 @use '../../styles/mixins' as * ;
-@import './style.adapt.scss' ;
+@use './style.adapt.scss' ;
 
 .hero {
   @include setScreen( flex, row, flex-start, flex-start ) ;

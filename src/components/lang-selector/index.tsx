@@ -1,7 +1,7 @@
 import type {JSX} from 'react';
 import {useCallback} from 'react';
 import {useTranslation} from "react-i18next";
-import {available as LANGUAGES_AVAILABLE, I18N_LANGUAGES, type TI18N} from "../../core/constants";
+import {available as LANGUAGES_AVAILABLE, I18N_LANGUAGES, type TI18N} from "../../core/i18n/types.ts";
 import './style.scss';
 
 export default function LangSelector(): JSX.Element {
