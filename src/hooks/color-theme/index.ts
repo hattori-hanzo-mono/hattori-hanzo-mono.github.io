@@ -1,5 +1,5 @@
 import {useCallback, useEffect, useState} from "react";
-import {SCHEMES, type TScheme} from "./types";
+import {SCHEMES, type TScheme} from "./types.ts";
 
 const SELECTOR_TEMPLATE: string = `(prefers-color-scheme: ${ SCHEMES.DARK })` ;
 const SELECTOR_COLOR_SCHEME: string = `color-scheme` ;
