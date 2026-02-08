@@ -4,4 +4,6 @@
 .wrapper {
   display: flex ;
   padding: $css-padding-100 ;
+  column-gap: $css-padding-100 ;
+  row-gap: $css-padding-100 ;
 }

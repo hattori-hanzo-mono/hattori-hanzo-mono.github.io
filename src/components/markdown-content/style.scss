@@ -1,10 +1,41 @@
 @use '../../styles/variables' as * ;
 @use '../../styles/mixins' as * ;
+@use './style.adapt.scss' ;
 
 .markdown-layout {
   @include setScreen( flex, column, flex-start, flex-start ) ;
   width: 100% ;
-
   font-size: $css-text-font-size-100 ;
-  &> * { font-size: $css-text-font-size-100 }
+
+  blockquote {
+    margin: 0 ;
+    font-size: $css-text-font-size-75 ;
+    p { font-family: $css-font-family-regular }
+  }
+
+  table {
+    width: 100% ;
+    border-color: $css-border-color;
+  }
+
+  strong {
+    font-family: $css-font-family-bold ;
+  }
+
+  hr {
+    width: 100% ;
+    border-color: $css-border-color-alpha;
+    border-style: dotted ;
+    margin-bottom: $css-text-font-size-100 ;
+  }
+
+  code:not(pre code) {
+    background-color: $css-primary-background-color ;
+    color: $css-primary-text-color ;
+    font-size: $css-text-font-size-75 ;
+    text-transform: uppercase ;
+    padding: calc( $css-text-font-size-100 - $css-text-font-size-75 ) ;
+  }
+
+  ul > li { display: inline-block }
 }

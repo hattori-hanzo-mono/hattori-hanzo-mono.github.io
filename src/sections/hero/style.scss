@@ -17,9 +17,8 @@
 
   &> .left {
     @include setScreen( flex, column, flex-start, flex-start ) ;
-    flex: 0 0 30%;
+    flex: 0 0 45%;
     height: 100%;
-    border-right: 1px solid $css-border-color-alpha ;
     background-color: $css-color-black ;
     color: $css-color-white ;
   }

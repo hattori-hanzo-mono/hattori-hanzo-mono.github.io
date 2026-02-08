@@ -1,7 +1,15 @@
 @use './variables' as * ;
+@use './fonts' as * ;
 @use './mixins' as * ;
+@use './index.adapt' as * ;
 
 * { box-sizing: border-box }
+
+html {
+  font-family: $css-font-family-regular ;
+  font-size: $css-text-font-size-100;
+  line-height: $css-text-line-height;
+}
 
 html, body {
   margin: 0 ;
@@ -11,16 +19,40 @@ html, body {
 
 body {
   @include setScreen( flex, column, flex-start, flex-start ) ;
-  background-color: $css-background-color ;
+  background-color: $css-border-color ;
   color: $css-text-color ;
-  font-family: $css-font-family ;
-  font-size: $css-text-font-size-100;
-  line-height: $css-text-line-height;
-  transition: background-color 500ms ease, color 500ms ease ;
+  transition: background-color 1000ms ease,
+              color 1000ms ease ;
 }
+
+a { font-family: $css-font-family-regular }
+p { font-family: $css-font-family-bold }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: $css-font-family-bold ;
   text-transform: uppercase ;
+  margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p, b {}
+h1, h2, h3, h4, h5, h6, b {
+  font-size: calc( $css-text-font-size-100 / .5 ) ;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li {
+    color: $css-primary-background-color ;
+    font-size: $css-text-font-size-75 ;
+    font-family: $css-font-family-bold ;
+    text-transform: lowercase ;
+    &:before { content: "#" }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $css-primary-background-color ;
+  &:hover { color: $css-secondary-background-color }
+}

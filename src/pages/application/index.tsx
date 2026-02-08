@@ -12,9 +12,6 @@ export default function Application(): JSX.Element {
                     <Toolbar/>
                 </Hero>
             </Sheet>
-            <Sheet>
-                <Hero/>
-            </Sheet>
         </div>
     )
 }

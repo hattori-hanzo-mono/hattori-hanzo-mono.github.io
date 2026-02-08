@@ -1,6 +1,6 @@
 :root {
-    --css-text-font-size-min: 12px ;
-    --css-text-font-size-max: 18px ;
+    --css-text-font-size-min: 14px ;
+    --css-text-font-size-max: 24px ;
     --css-text-font-size-value: clamp( var(--css-text-font-size-min), 1.1vw, var(--css-text-font-size-max) );
 
     /* PADDINGS */
@@ -14,9 +14,9 @@
     --css-color-black: black ;
     --css-color-white: white ;
     --css-color-red: crimson ;
-    --css-color-green: limegreen ;
+    --css-color-green: #078b07;
     --css-color-yellow: orange ;
-    --css-color-blue: dodgerblue ;
+    --css-color-blue: #00b3c0 ;
 
     /* COLOR SCHEME */
       color-scheme: light dark ;
@@ -24,7 +24,8 @@
     --css-text-color: var(--css-color-black);
 
     /* FONTS */
-    --css-font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    --css-font-family-regular: FontRegular, Arial ;
+    --css-font-family-bold: FontBold, Arial ;
     --css-text-font-size-100: var(--css-text-font-size-value);
     --css-text-font-size-75: calc(var(--css-text-font-size-100) * .75 );
     --css-text-font-size-50: calc(var(--css-text-font-size-100) * .50 );
@@ -42,10 +43,10 @@
         --css-background-color: var(--css-color-white);
         --css-text-color: var(--css-color-black);
 
-        --css-primary-background-color: var(--css-color-yellow) ;
-        --css-primary-text-color: var(--css-color-black) ;
-        --css-secondary-background-color: var(--css-color-blue)  ;
-        --css-secondary-text-color: var(--css-color-white) ;
+        --css-primary-background-color: var(--css-color-blue) ;
+        --css-primary-text-color: var(--css-color-white) ;
+        --css-secondary-background-color: var(--css-color-yellow)  ;
+        --css-secondary-text-color: var(--css-color-black) ;
     }
     &[data-theme="dark"] {
           color-scheme: dark;

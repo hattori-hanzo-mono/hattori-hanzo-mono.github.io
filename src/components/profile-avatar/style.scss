@@ -2,9 +2,7 @@
 @use '../../styles/mixins' as * ;
 
 .profile-avatar {
-  @include setScreen() ;
+  @include setScreen( flex, column, flex-start, flex-start ) ;
   width: 100%;
-  &> img {
-    width: 100%;
-  }
+  &> img { width: 100% }
 }

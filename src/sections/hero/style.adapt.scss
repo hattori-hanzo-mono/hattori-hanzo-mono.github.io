@@ -10,7 +10,14 @@
 
 @media( orientation: portrait ) {
   .hero {
+    flex-direction: column !important;
+    &> .left {
+      // flex-direction: row !important;
+      flex: unset !important ;
+      width: 100% ;
+      height: auto !important ;
+    }
     &> .left .wrapper { padding: $css-padding-100 }
-    &> .context .wrapper { padding: 0 $css-padding-100 }
+    &> .context .wrapper { padding: $css-padding-100 }
   }
 }

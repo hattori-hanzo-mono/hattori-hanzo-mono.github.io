@@ -13,7 +13,8 @@
   &> .label {
     color: $css-border-color;
     &:after {
-      content: ": ";
+      display: contents ;
+      content: ":";
       color: $css-border-color;
     }
   }
@@ -22,17 +23,7 @@
     cursor: pointer ;
     color: $css-color-white ;
 
-    &[data-selected="true"]:not(:hover) {
-      color: $css-primary-background-color ;
-    }
-    &:hover {
-      color: $css-secondary-background-color ;
-    }
-    &:not(:last-child):after {
-      display: contents ;
-      content: " | ";
-      padding: 0 1px ;
-      color: $css-border-color;
-    }
+    &[data-selected="true"]:not(:hover) { color: $css-primary-background-color }
+    &:hover { color: $css-secondary-background-color }
   }
 }

@@ -3,7 +3,7 @@
 
 .theme-selector {
   @include setScreen( flex, row ) ;
-  font-family: $css-font-family ;
+  font-family: $css-font-family-regular ;
   column-gap: $css-padding-25;
   white-space: nowrap ;
 
@@ -15,7 +15,8 @@
   &> .label {
     color: $css-border-color;
     &:after {
-      content: ": ";
+      display: contents ;
+      content: ":";
       color: $css-border-color;
     }
   }

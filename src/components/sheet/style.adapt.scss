@@ -6,5 +6,8 @@
 }
 
 @media( orientation: portrait ) {
-  .sheet { width: 100% }
+  .sheet {
+    width: 100% ;
+    padding-bottom: $css-padding-100 ;
+  }
 }
